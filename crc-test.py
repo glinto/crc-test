@@ -11,7 +11,7 @@ phrases = [
     'Graceful Ticket'
 ]
 
-# And their checksum, respecitvely
+# And their checksum, respectively
 checksums = [
     17040,
     10013,
@@ -20,7 +20,7 @@ checksums = [
     10582
 ]
 
-# Check if our CRC algorithm 
+# Check if our CRC algorithm (crc16_modbus) works properly
 for i in range(len(phrases)): 
     print(phrases[i], end='... ') 
     checksum = crc16_modbus(bytearray(phrases[i], 'utf-8'))
